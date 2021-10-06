@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">FastestFingerFirst</string>
     <string name="action_settings">Settings</string>
+    <string name="introduction_text">Witaj w aplikacji \"Kto pierwszy, ten lepszy!\" \nAplikacja ta sprawdzi Twój refleks i szybkość\nrozwiązywania zadań w rundzie eliminacyjnej, która trzeba przejść, by dostać się do etapu właściwego w programie \"Milionerzy\". Poćwicz trochę, a z pewnością\nnie będziesz miał później problemu z przejściem eliminacji,\njeśli zechcesz kiedyś zagrać w \"Milionerach\".</string>
 </resources>
