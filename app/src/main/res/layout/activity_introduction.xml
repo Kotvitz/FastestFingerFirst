@@ -21,23 +21,23 @@
         app:layout_constraintVertical_bias="0.41" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/startGameButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start"
+        android:text="@string/startButtonText"
         android:textColor="@drawable/buttontextselector"
         android:background="@drawable/buttonshape"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/exitButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/textView"
         app:layout_constraintVertical_bias="0.458" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/exitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wyjdź"
+        android:text="@string/exitButtonText"
         android:textColor="@drawable/buttontextselector"
         android:background="@drawable/buttonshape"
         app:layout_constraintBottom_toBottomOf="parent"
