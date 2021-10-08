@@ -4,7 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/AppTheme.NoActionBar"
+    android:background="@drawable/app_background"
     tools:context=".GameActivity">
 
+    <ImageView
+        android:id="@+id/question_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/question_field" />
+
+    <ImageView
+        android:id="@+id/answer_a_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        app:srcCompat="@drawable/answer_a_field" />
+
+    <ImageView
+        android:id="@+id/answer_b_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        app:srcCompat="@drawable/answer_b_field" />
+
+    <ImageView
+        android:id="@+id/answer_c_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        app:srcCompat="@drawable/answer_c_field" />
+
+    <ImageView
+        android:id="@+id/answer_d_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        app:srcCompat="@drawable/answer_d_field" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
