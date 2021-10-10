@@ -5,12 +5,51 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.ImageView
+import androidx.core.view.isVisible
 
 class GameActivity : AppCompatActivity() {
+
+    private lateinit var aAnswerField: ImageView
+    private lateinit var markedAAnswerField: ImageView
+    private lateinit var bAnswerField: ImageView
+    private lateinit var markedBAnswerField: ImageView
+    private lateinit var cAnswerField: ImageView
+    private lateinit var markedCAnswerField: ImageView
+    private lateinit var dAnswerField: ImageView
+    private lateinit var markedDAnswerField: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
+        setMarkingAnswerFields()
+    }
+
+    private fun setMarkingAnswerFields() {
+        aAnswerField = findViewById(R.id.answer_a_field)
+        markedAAnswerField = findViewById(R.id.marked_answer_a_field)
+        aAnswerField.setOnClickListener{
+            aAnswerField.visibility = View.GONE
+            markedAAnswerField.visibility = View.VISIBLE
+        }
+        bAnswerField = findViewById(R.id.answer_b_field)
+        markedBAnswerField = findViewById(R.id.marked_answer_b_field)
+        bAnswerField.setOnClickListener{
+            bAnswerField.visibility = View.GONE
+            markedBAnswerField.visibility = View.VISIBLE
+        }
+        cAnswerField = findViewById(R.id.answer_c_field)
+        markedCAnswerField = findViewById(R.id.marked_answer_c_field)
+        cAnswerField.setOnClickListener{
+            cAnswerField.visibility = View.GONE
+            markedCAnswerField.visibility = View.VISIBLE
+        }
+        dAnswerField = findViewById(R.id.answer_d_field)
+        markedDAnswerField = findViewById(R.id.marked_answer_d_field)
+        dAnswerField.setOnClickListener{
+            dAnswerField.visibility = View.GONE
+            markedDAnswerField.visibility = View.VISIBLE
+        }
     }
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {

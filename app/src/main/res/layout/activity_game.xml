@@ -21,11 +21,27 @@
         app:srcCompat="@drawable/answer_a_field" />
 
     <ImageView
+        android:id="@+id/marked_answer_a_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/marked_a_answer_field" />
+
+    <ImageView
         android:id="@+id/answer_b_field"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="350dp"
         app:srcCompat="@drawable/answer_b_field" />
+
+    <ImageView
+        android:id="@+id/marked_answer_b_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/marked_b_answer_field" />
 
     <ImageView
         android:id="@+id/answer_c_field"
@@ -35,9 +51,25 @@
         app:srcCompat="@drawable/answer_c_field" />
 
     <ImageView
+        android:id="@+id/marked_answer_c_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/marked_c_answer_field" />
+
+    <ImageView
         android:id="@+id/answer_d_field"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="450dp"
         app:srcCompat="@drawable/answer_d_field" />
+
+    <ImageView
+        android:id="@+id/marked_answer_d_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/marked_d_answer_field" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
