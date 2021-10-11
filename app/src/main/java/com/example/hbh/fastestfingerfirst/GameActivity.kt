@@ -1,12 +1,12 @@
 package com.example.hbh.fastestfingerfirst
 
+import android.media.MediaPlayer
 import android.os.Bundle
+import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
-import android.view.Menu
-import android.view.MenuItem
 import android.view.View
 import android.widget.ImageView
-import androidx.core.view.isVisible
+import androidx.core.os.postDelayed
 
 class GameActivity : AppCompatActivity() {
 
@@ -18,11 +18,18 @@ class GameActivity : AppCompatActivity() {
     private lateinit var markedCAnswerField: ImageView
     private lateinit var dAnswerField: ImageView
     private lateinit var markedDAnswerField: ImageView
+    private lateinit var standbyMusic: MediaPlayer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
-        setMarkingAnswerFields()
+        standbyMusic = MediaPlayer.create(applicationContext, R.raw.standby_for_fastest_finger_first_question)
+        standbyMusic.start()
+        val handler = Handler()
+        handler.postDelayed({
+            standbyMusic.stop()
+            setMarkingAnswerFields()
+        }, standbyMusic.duration.toLong() - 2000)
     }
 
     private fun setMarkingAnswerFields() {
