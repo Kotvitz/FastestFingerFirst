@@ -19,16 +19,19 @@ class GameActivity : AppCompatActivity() {
     private lateinit var dAnswerField: ImageView
     private lateinit var markedDAnswerField: ImageView
     private lateinit var standbyMusic: MediaPlayer
+    private lateinit var answeringMusic: MediaPlayer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
         standbyMusic = MediaPlayer.create(applicationContext, R.raw.standby_for_fastest_finger_first_question)
+        answeringMusic = MediaPlayer.create(applicationContext, R.raw.fastest_finger_first_answering)
         standbyMusic.start()
-        val handler = Handler()
-        handler.postDelayed({
+        val standbyHandler = Handler()
+        standbyHandler.postDelayed({
             standbyMusic.stop()
             setMarkingAnswerFields()
+            answeringMusic.start()
         }, standbyMusic.duration.toLong() - 2000)
     }
 
