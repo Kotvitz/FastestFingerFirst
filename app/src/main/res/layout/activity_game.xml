@@ -72,4 +72,15 @@
         android:layout_marginTop="450dp"
         android:visibility="gone"
         app:srcCompat="@drawable/marked_d_answer_field" />
+
+    <Button
+        android:id="@+id/delButton"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:textColor="@drawable/buttontextselector"
+        android:background="@drawable/delbuttonshape"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="550dp"
+        android:text="@string/delButtonText" />
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
