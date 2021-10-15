@@ -79,8 +79,18 @@
         android:layout_height="50dp"
         android:textColor="@drawable/buttontextselector"
         android:background="@drawable/delbuttonshape"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="550dp"
         android:text="@string/delButtonText" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:textColor="@drawable/buttontextselector"
+        android:background="@drawable/confirmbuttonshape"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="550dp"
+        android:text="✓"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
