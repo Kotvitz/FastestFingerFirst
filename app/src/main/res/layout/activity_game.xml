@@ -93,4 +93,40 @@
         android:layout_marginTop="550dp"
         android:text="✓"/>
 
+    <Button
+        android:id="@+id/selectedAnswerButton1"
+        android:layout_width="35dp"
+        android:layout_height="25dp"
+        android:background="@drawable/selectedanswerbuttonshape"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="565dp"
+    />
+
+    <Button
+        android:id="@+id/selectedAnswerButton2"
+        android:layout_width="35dp"
+        android:layout_height="25dp"
+        android:background="@drawable/selectedanswerbuttonshape"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="565dp"
+        />
+
+    <Button
+        android:id="@+id/selectedAnswerButton3"
+        android:layout_width="35dp"
+        android:layout_height="25dp"
+        android:background="@drawable/selectedanswerbuttonshape"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="565dp"
+        />
+
+    <Button
+        android:id="@+id/selectedAnswerButton4"
+        android:layout_width="35dp"
+        android:layout_height="25dp"
+        android:background="@drawable/selectedanswerbuttonshape"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="565dp"
+        />
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
