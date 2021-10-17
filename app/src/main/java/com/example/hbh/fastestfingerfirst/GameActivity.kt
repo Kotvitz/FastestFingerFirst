@@ -5,8 +5,8 @@ import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import android.view.View
+import android.widget.Button
 import android.widget.ImageView
-import androidx.core.os.postDelayed
 
 class GameActivity : AppCompatActivity() {
 
@@ -18,6 +18,12 @@ class GameActivity : AppCompatActivity() {
     private lateinit var markedCAnswerField: ImageView
     private lateinit var dAnswerField: ImageView
     private lateinit var markedDAnswerField: ImageView
+    private lateinit var delButton: Button
+    private lateinit var confirmButton: Button
+    private lateinit var selectedAnswerButton1: Button
+    private lateinit var selectedAnswerButton2: Button
+    private lateinit var selectedAnswerButton3: Button
+    private lateinit var selectedAnswerButton4: Button
     private lateinit var standbyMusic: MediaPlayer
     private lateinit var answeringMusic: MediaPlayer
 
@@ -31,6 +37,7 @@ class GameActivity : AppCompatActivity() {
         standbyHandler.postDelayed({
             standbyMusic.stop()
             setMarkingAnswerFields()
+            showFunctionalButtons()
             answeringMusic.start()
         }, standbyMusic.duration.toLong() - 2000)
     }
@@ -60,6 +67,26 @@ class GameActivity : AppCompatActivity() {
             dAnswerField.visibility = View.GONE
             markedDAnswerField.visibility = View.VISIBLE
         }
+    }
+
+    private fun showFunctionalButtons() {
+        delButton = findViewById(R.id.delButton)
+        delButton.visibility = View.VISIBLE
+
+        confirmButton = findViewById(R.id.confirmButton)
+        confirmButton.visibility = View.VISIBLE
+
+        selectedAnswerButton1 = findViewById(R.id.selectedAnswerButton1)
+        selectedAnswerButton1.visibility = View.VISIBLE
+
+        selectedAnswerButton2 = findViewById(R.id.selectedAnswerButton2)
+        selectedAnswerButton2.visibility = View.VISIBLE
+
+        selectedAnswerButton3 = findViewById(R.id.selectedAnswerButton3)
+        selectedAnswerButton3.visibility = View.VISIBLE
+
+        selectedAnswerButton4 = findViewById(R.id.selectedAnswerButton4)
+        selectedAnswerButton4.visibility = View.VISIBLE
     }
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {

@@ -81,6 +81,7 @@
         android:background="@drawable/delbuttonshape"
         android:layout_marginStart="10dp"
         android:layout_marginTop="550dp"
+        android:visibility="gone"
         android:text="@string/delButtonText" />
 
     <Button
@@ -91,6 +92,7 @@
         android:background="@drawable/confirmbuttonshape"
         android:layout_marginStart="310dp"
         android:layout_marginTop="550dp"
+        android:visibility="gone"
         android:text="✓"/>
 
     <Button
@@ -100,7 +102,7 @@
         android:background="@drawable/selectedanswerbuttonshape"
         android:layout_marginStart="100dp"
         android:layout_marginTop="565dp"
-    />
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/selectedAnswerButton2"
@@ -109,7 +111,7 @@
         android:background="@drawable/selectedanswerbuttonshape"
         android:layout_marginStart="150dp"
         android:layout_marginTop="565dp"
-        />
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/selectedAnswerButton3"
@@ -118,7 +120,7 @@
         android:background="@drawable/selectedanswerbuttonshape"
         android:layout_marginStart="200dp"
         android:layout_marginTop="565dp"
-        />
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/selectedAnswerButton4"
@@ -127,6 +129,6 @@
         android:background="@drawable/selectedanswerbuttonshape"
         android:layout_marginStart="250dp"
         android:layout_marginTop="565dp"
-        />
+        android:visibility="gone" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
